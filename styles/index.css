@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+  color: rgb(70, 70, 70);
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.left-panel {
+  flex: 1;
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-panel {
+  flex: 0.4;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.social-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.facebook,
+.gmail,
+.apple {
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.gmail {
+  background-color: #db4437;
+}
+
+.apple {
+  background-color: #000;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-btn {
+  background-color: #28feaf;
+  color: #181818;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn {
+  background-color: #0b57d0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+
+.back-link {
+  margin-top: 16px;
+  font-size: 14px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+.logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  margin: 0;
+}
+.logo-container img {
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+  margin-bottom: 0.2rem;
+}
+
+.logo-container h1 {
+  width: 100%;
+  font-size: 1.4rem;
+  color: rgb(50, 50, 50);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.register-btn,
+.login-btn {
+  border-radius: 20px;
+}
+
+.register-btn {
+  width: 150px;
+}
+
+.login-btn {
+  width: 150px;
+}
+
+.forget-container {
+  text-align: center;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.forget-container small:hover {
+  text-decoration: underline;
+}
+
+.modal-forget-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.modal-forget {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-forget input {
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 4px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.primary-button {
+  background-color: #28feaf;
+  color: #181818;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-group-modal {
+  width: 100%;
+  display: flex;
+  margin-top: 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.btn-group-modal small {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: rgb(80, 80, 80);
+}
+.btn-group-modal small:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
