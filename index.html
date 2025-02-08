@@ -33,12 +33,12 @@
             <a class="social-btn apple" href="https://www.icloud.com/">Apple</a>
           </div>
           <div class="input-group">
-            <label for="email">Correo</label>
+            <label for="email">Usuario</label>
             <input
               type="text"
-              id="email"
+              id="user"
               class="user"
-              placeholder="Ingresa tu correo"
+              placeholder="Ingresa tu usuario"
               required
             />
           </div>
@@ -66,10 +66,16 @@
     </div>
     <div class="modal-forget-container hidden">
       <form class="modal-forget">
-        <input type="text" placeholder="Correo electrónico" />
+        <input
+          type="email"
+          id="forget-query"
+          placeholder="Correo electrónico"
+          required
+        />
+        <small class="message-success"> </small>
         <div class="btn-group-modal">
           <small>Cerrar</small>
-          <button class="primary-button">Consultar</button>
+          <button class="primary-button" id="query-btn">Consultar</button>
         </div>
       </form>
     </div>

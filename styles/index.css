@@ -230,6 +230,10 @@ body {
   align-items: center;
 }
 
+.modal-forget-hidden-elements {
+  padding: 0 1.5rem;
+}
+
 .modal-forget input {
   border: 1px solid rgb(225, 225, 225);
   border-radius: 4px;
@@ -257,6 +261,22 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0;
+  flex-direction: row;
+}
+
+.message-success {
+  flex-grow: 1;
+  color: red;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.message-success-ok {
+  color: #0a7e36;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 
 .btn-group-modal small {
